@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<script src="react18.js"></script>
+<script src="react-dom18.js"></script>
+<script src="babel.min.js"></script>
+<script src="fix.min.js"></script>
+<script type="text/babel">
+  const {Foo} = window.fix;
+  const App = () => {
+    return (
+      <Foo />
+    )
+  }
+  const root = window.ReactDOM.createRoot(document.getElementById("root"));
+  root.render(<App />)
+</script>
+<body>
+  <div id="root"></div>
+</body>
+</html>
